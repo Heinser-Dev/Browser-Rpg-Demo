@@ -133,8 +133,9 @@ function drawAllObjects() {
 	})
 	
 	document.getElementById('sendMessage').addEventListener('click', ()=>{
-		const message = document.getElementById('message').value;
+		let message = document.getElementById('message').value;
 		sendChatMessage(nickname + ': ' + message, 'normal');
+		message = '';
 	})
 	
 	// Sincronize a posiÃ§Ã£o do jogador com os dados do banco de dados em tempo real
