@@ -7,7 +7,7 @@ class Player {
     this.cameraX = this.x - Math.floor(468 / 2);
     this.cameraY = this.y - Math.floor(234 / 2);
 	this.nickname = config.nickname|| "Guest#73289";
-	this.speed = config.speed || 1000;
+	this.speed = config.speed || 500;
 	this.moving = false;
 	this.img = {
 		x: config.img.x  || 2,
